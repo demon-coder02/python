@@ -1,4 +1,4 @@
-    import speech_recognition as sr
+import speech_recognition as sr
 import win32com.client
 import webbrowser
 import os
@@ -11,7 +11,6 @@ from faker import Faker
 
 speaker = win32com.client.Dispatch("SAPI.SpVoice")
 selected_voice_index = 1
-
 
 
 def takeCommand():
@@ -44,7 +43,7 @@ def currectTime():
 
 
 
-def opne_windows_application():
+def open_windows_application():
      subprocess.run("start ms-setting:", sehll=True)
 
 
@@ -320,7 +319,7 @@ Please Let me know If I can help you
 
             if "open setting" in query.lower():
                 if __name__ == "__main__":
-                    opne_windows_application()
+                    open_windows_application()
 
 
         # ---------------------------------------------------------------------------------------------------------------------------------------------------------
